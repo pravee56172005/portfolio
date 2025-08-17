@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Wear - Portfolio Details</title>
+    <meta
+      name="description"
+      content="Urban Wear Clothing Store Project Portfolio"
+    />
+    <meta
+      name="keywords"
+      content="Urban Wear, Clothing Store, E-commerce, Web Development"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #111;
+        color: #eee;
+        line-height: 1.6;
+      }
+
+      a {
+        color: #1e90ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Header */
+      header {
+        background: #000;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header nav a {
+        margin-left: 1.5rem;
+        font-weight: 500;
+        color: #eee;
+      }
+      header nav a:first-child {
+        margin-left: 0;
+      }
+
+      /* Container */
+      .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      /* Portfolio Details */
+      .portfolio-details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+      .portfolio-image {
+        flex: 2 1 500px;
+      }
+      .portfolio-image img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .portfolio-info,
+      .portfolio-description {
+        background: #222;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .portfolio-info h3,
+      .portfolio-description h2,
+      .portfolio-description h3 {
+        margin-bottom: 1rem;
+        color: #1e90ff;
+      }
+
+      .portfolio-info ul {
+        list-style: none;
+      }
+      .portfolio-info li {
+        margin-bottom: 0.75rem;
+      }
+
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .feature-item {
+        flex: 1 1 calc(50% - 1rem);
+        background: #333;
+        padding: 1rem;
+        border-radius: 6px;
+      }
+      .feature-item i {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        color: #1e90ff;
+      }
+
+      /* Scroll Top */
+      .scroll-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #1e90ff;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .portfolio-details {
+          flex-direction: column;
+        }
+        .feature-item {
+          flex: 1 1 100%;
+        }
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        header nav {
+          margin-top: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo"><h1>Urban Wear</h1></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Portfolio Details -->
+    <div class="container portfolio-details">
+      <!-- Project Image -->
+      <div class="portfolio-image">
+        <img
+          src="assets/img/portfolio/urban-wear.jpg"
+          alt="Urban Wear Website"
+        />
+      </div>
+
+      <!-- Project Info -->
+      <div class="portfolio-info">
+        <h3>Project Information</h3>
+        <ul>
+          <li><strong>Project Name:</strong> Urban Wear Clothing Store</li>
+          <li><strong>Role:</strong> Frontend & Backend Developer</li>
+          <li><strong>Category:</strong> E-commerce Web Application</li>
+          <li><strong>Client:</strong> Personal / Demo Project</li>
+          <li>
+            <strong>Project URL:</strong>
+            <a href="#" target="_blank">www.urbanwear.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Project Description -->
+      <div class="portfolio-description">
+        <h2>Project Overview</h2>
+        <p>
+          Urban Wear is a modern e-commerce website for clothing retail,
+          designed to provide users with a seamless online shopping experience.
+          I implemented the frontend, styled the product catalog, shopping cart,
+          and checkout pages, while also integrating backend APIs for product
+          management and payment simulation.
+        </p>
+        <p>
+          The website features responsive design for mobile and desktop,
+          intuitive navigation, and visually appealing product displays to
+          enhance user engagement.
+        </p>
+
+        <h3>Key Features</h3>
+        <div class="features">
+          <div class="feature-item">
+            <i class="bi bi-phone"></i>
+            <h4>Responsive Design</h4>
+            <p>
+              Fully responsive layout for mobile, tablet, and desktop users.
+            </p>
+          </div>
+          <div class="feature-item">
+            <i class="bi bi-cart"></i>
+            <h4>Shopping Cart</h4>
+            <p>
+              Interactive cart system allowing easy addition/removal of
+              products.
+            </p>
+          </div>
+          <div class="feature-item">
+            <i class="bi bi-credit-card-2-front"></i>
+            <h4>Checkout & Payment</h4>
+            <p>Secure checkout flow with simulated payment integration.</p>
+          </div>
+          <div class="feature-item">
+            <i class="bi bi-gear"></i>
+            <h4>Backend Integration</h4>
+            <p>
+              Connected frontend to backend APIs for product and order
+              management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scroll-top">&#8679;</a>
+  </body>
+</html>
